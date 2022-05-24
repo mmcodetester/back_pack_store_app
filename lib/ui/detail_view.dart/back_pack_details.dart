@@ -35,11 +35,79 @@ class BackPackDetails extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: size.height * 0.3),
                   height: 500,
+                  width: size.width,
                   decoration: const BoxDecoration(
                       color: Colors.indigo,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           topRight: Radius.circular(20))),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: const [
+                          Padding(
+                            padding: EdgeInsets.only(top: 18.0, left: 20.0),
+                            child: Text(
+                              "Avaliable Color",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                  letterSpacing: 1.0),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 8.0,
+                      ),
+                      Row(
+                        children: [
+                          const SizedBox(
+                            width: 25,
+                          ),
+                          Container(
+                            height: 20,
+                            width: 20,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                            ),
+                            child: const DecoratedBox(
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.amber)),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Container(
+                            height: 20,
+                            width: 20,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                            ),
+                            child: const DecoratedBox(
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.white)),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Container(
+                            height: 20,
+                            width: 20,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                            ),
+                            child: const DecoratedBox(
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.black)),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
                 Column(
                   children: [
